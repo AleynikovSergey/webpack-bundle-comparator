@@ -1,0 +1,114 @@
+.hero-banner--three {
+  &:hover {
+    .react-multiple-carousel__arrow {
+      display: block;
+      &--left {
+        left: calc(4% + 1px);
+        transition: all 0.8s;
+      }
+      &--right {
+        right: calc(4% + 1px);
+        transition: all 0.8s;
+      }
+      &:hover {
+        background: $blue-violet;
+        border: 1px solid $blue-violet;
+        &::before {
+          color: $white;
+        }
+      }
+    }
+  }
+  .hero-banner--bg {
+    left: -10%;
+    bottom: 0;
+  }
+  .round-shape1 {
+    right: -100px;
+    top: -124px;
+    z-index: -1;
+  }
+  .round-shape2 {
+    bottom: -125px;
+    left: -140px;
+    z-index: -1;
+  }
+  .bubble-1 {
+    position: absolute;
+    top: 86px;
+    left: 23px;
+  }
+  .bubble-2 {
+    position: absolute;
+    top: 50px;
+  }
+  .bubble-3 {
+    position: absolute;
+    bottom: 38%;
+  }
+  .react-multiple-carousel__arrow {
+    display: none;
+    outline: none;
+    &--left {
+      position: absolute;
+      left: -138px;
+      background: #f6edff;
+      border: 1px solid #d4bdff;
+      transition: all 0.8s;
+    }
+    &--right {
+      position: absolute;
+      right: -138px;
+      background: #f6edff;
+      border: 1px solid #d4bdff;
+      transition: all 0.8s;
+    }
+    &::before {
+      color: #d4bdff !important;
+    }
+  }
+  .hero-banner--content {
+    padding-top: 217px;
+    padding-bottom: 250px;
+    @media (max-width: 991px) {
+      text-align: center !important;
+      .content-icon {
+        ul {
+          justify-content: center !important;
+          margin-left: 50px !important;
+        }
+      }
+    }
+    @media (max-width: 424px) {
+      padding: 100px 0;
+      h1 {
+        font-size: 40px !important;
+      }
+    }
+    .heading {
+      color: #393939;
+      font-size: 48px;
+      font-weight: 400;
+      padding-bottom: 20px;
+      animation-delay: 1.5s;
+      text-transform: capitalize;
+      line-height: 57px;
+      span {
+        font-weight: 600;
+      }
+    }
+    p {
+      animation-delay: 2s;
+      color: #393939;
+      padding-bottom: 30px;
+    }
+  }
+  .banner-img {
+    position: absolute;
+    top: 15%;
+    right: -216px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}

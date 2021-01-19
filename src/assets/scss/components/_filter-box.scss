@@ -1,0 +1,7 @@
+.filter-box {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  .label {
+    grid-column: 1/40;
+  }
+}

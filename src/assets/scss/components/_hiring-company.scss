@@ -1,0 +1,15 @@
+.hiring-company {
+  &--slider {
+    .custom-button-group {
+      margin: 0;
+      left: -97%;
+      top: 68%;
+      right: 0;
+      z-index: 1000;
+      display: inline-table !important;
+      @media (max-width: 992px) {
+        display: none !important;
+      }
+    }
+  }
+}

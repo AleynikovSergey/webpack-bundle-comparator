@@ -1,0 +1,53 @@
+.happy-clients {
+  .happy-clients-card {
+    border-radius: 100px !important;
+    @media (max-width: 767.98px) {
+      border-radius: 30px !important;
+    }
+    @media (max-width: 575.98px) {
+      border-radius: 10px !important;
+    }
+    .client_shap1 {
+      top: 35px;
+      left: 23px;
+    }
+    .client_shap2 {
+      top: 130px;
+      left: 200px;
+    }
+    .client_shap3 {
+      top: 0;
+      left: 500px;
+    }
+  }
+  .happy-client-slider {
+    .custom-button-group {
+      bottom: 20%;
+      left: 6%;
+      @media (max-width: 991.98px) {
+        left: 3%;
+        bottom: 18%;
+      }
+      @media (max-width: 767.98px) {
+        bottom: 10%;
+        left: 41%;
+      }
+      @media (max-width: 575.98px) {
+        bottom: 5%;
+        left: 39%;
+      }
+
+      .btn {
+        background: transparent !important;
+        border: none !important;
+        margin-right: 0px !important;
+        padding: 15px !important;
+      }
+    }
+  }
+  .round-shape {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}

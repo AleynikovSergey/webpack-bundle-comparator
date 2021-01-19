@@ -1,0 +1,14 @@
+.search-button {
+  .search-toggle {
+    transition: all 0.9s ease-in-out !important;
+    transform: translateX(0px);
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .search-slider {
+    transform: translateX(-3100px);
+    transition: all 0.8s ease-in-out !important;
+    top: 0;
+  }
+}

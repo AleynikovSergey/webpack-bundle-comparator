@@ -1,0 +1,15 @@
+// Horizontal gradient, from left to right (45deg)
+
+@mixin gradient-x(
+  $start-color,
+  $end-color,
+  $start-percent: 10%,
+  $end-percent: 100%
+) {
+  background-image: linear-gradient(
+    45deg,
+    $start-color $start-percent,
+    $end-color $end-percent
+  );
+  background-repeat: repeat-x;
+}

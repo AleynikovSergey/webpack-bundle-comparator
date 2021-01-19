@@ -1,0 +1,22 @@
+.slider-card {
+  &--img {
+    height: 195px;
+    img {
+      transform: skew(-6deg, -5deg);
+      transition: all 0.5s;
+    }
+  }
+  a {
+    transition: all 0.5s;
+  }
+  &:hover {
+    img {
+      transform: skew(0deg);
+      transition: all 0.5s;
+    }
+    a {
+      color: $danger !important;
+      transition: all 0.5s;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.searchby-category {
+  form {
+    border-radius: 100px;
+    @media (max-width: 991.98px) {
+      border-radius: 30px;
+    }
+    .btn {
+      border-radius: 100px;
+      background: $blue-violet-gradient;
+      border-color: $blue-violet;
+      @media (max-width: 991.98px) {
+        border-radius: 0px;
+      }
+    }
+    .form-group {
+      @media (max-width: 991.98px) {
+        padding: 10px 16px !important;
+        border-bottom: 1px solid $gray-300 !important;
+        &.keyword {
+          border-bottom: 0 !important;
+        }
+      }
+      .form-control {
+        @media (max-width: 991.98px) {
+          padding-left: 20px !important;
+          border-right: 0 !important;
+        }
+      }
+    }
+  }
+}

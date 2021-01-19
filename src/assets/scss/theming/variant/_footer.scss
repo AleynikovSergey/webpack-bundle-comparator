@@ -1,0 +1,62 @@
+footer {
+  background: #303d59;
+  .foo-overview {
+    .card-body {
+      p {
+        color: $gray-500 !important;
+      }
+      a {
+        color: $gray-500 !important;
+        &:hover {
+          color: $primary !important;
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          background: #3a4868 !important;
+          border: 1px solid #3a4868;
+          color: $gray-500;
+          &:hover {
+            color: $white !important;
+            background: $primary !important;
+          }
+        }
+      }
+    }
+  }
+  .foo-nav {
+    ul {
+      li {
+        a {
+          color: $gray-500 !important;
+          &:hover {
+            color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+  .foo-bottom {
+    .waveWrapperInner {
+      .wave {
+        &.waveTop {
+          background-image: url('https://webstrot.com/html/jbdesk/main_version/main_pages/images/wave1.png');
+        }
+        &.waveBottom {
+          background-image: url('https://webstrot.com/html/jbdesk/main_version/main_pages/images/wave1.png');
+        }
+      }
+    }
+  }
+  .copyright {
+    color: $gray-500 !important;
+    a {
+      color: $gray-500 !important;
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}

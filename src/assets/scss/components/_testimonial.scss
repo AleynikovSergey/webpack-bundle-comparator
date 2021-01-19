@@ -1,0 +1,42 @@
+.testimonial {
+  @media (max-width: 991px) {
+    padding: 90px 0 70px 0 !important;
+    background: #57ac60;
+    background: -moz-linear-gradient(
+      0deg,
+      rgb(70, 133, 163) 9%,
+      rgb(87, 172, 97) 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(70, 133, 163) 9%,
+      rgb(87, 172, 97) 100%
+    );
+    background: linear-gradient(
+      0deg,
+      rgb(70, 133, 163) 9%,
+      rgb(87, 172, 97) 100%
+    );
+  }
+  &-shape {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -197px;
+      background-image: url('https://webstrot.com/html/jbdesk/main_version/main_pages/images/shape2.png');
+      min-height: 1280px;
+      background-position: center 0;
+      background-size: cover;
+    }
+    .testimonial-content--wrapper {
+      z-index: 1;
+      .testimonial-heading {
+        @media (max-width: 575px) {
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+}

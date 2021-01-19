@@ -1,0 +1,16 @@
+.company-single {
+  .thumbnail {
+    transform: translateY(-50%);
+  }
+  .company-single-slider {
+    position: unset !important;
+    .custom-button-group {
+      top: -25px;
+      right: 15px;
+      z-index: 1000;
+      .btn {
+        padding: $spacer * 0.25 $spacer !important;
+      }
+    }
+  }
+}

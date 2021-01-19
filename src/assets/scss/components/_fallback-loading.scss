@@ -1,0 +1,44 @@
+.jb_preloader {
+  z-index: $zindex-tooltip;
+  transition: 0.2s all ease;
+  transition-delay: 0.5s;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  .spinner_wrap {
+    top: size(50);
+    left: size(50);
+    transform: translate(-size(50), -size(50));
+    z-index: $zindex-popover;
+    .spinner {
+      width: spacer(8);
+      height: spacer(8);
+      -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+      animation: sk-scaleout 1s infinite ease-in-out;
+    }
+  }
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: theme-color('primary');
+    transition: 0.7s all ease;
+    width: size(100);
+    height: size(50);
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+}
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  z-index: 9;
+}

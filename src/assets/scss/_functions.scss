@@ -1,0 +1,13 @@
+//
+// functions.scss
+//
+
+// Retrieve size Scss maps
+@function size($key: 50) {
+  @return map-get($sizes, $key);
+}
+
+// Retrieve spacer Scss maps
+@function spacer($key: 0) {
+  @return map-get($spacers, $key);
+}

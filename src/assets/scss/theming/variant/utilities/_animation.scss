@@ -1,0 +1,11 @@
+.animation-ripple {
+  &::after,
+  &::before,
+  i {
+    background: lighten(theme-color('primary'), 18%);
+  }
+}
+
+.sk-cube {
+  background-color: theme-color('primary');
+}

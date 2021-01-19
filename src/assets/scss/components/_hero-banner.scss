@@ -1,0 +1,56 @@
+.hero-banner {
+  background: url(https://webstrot.com/html/jbdesk/main_version/main_pages/images/banner1.jpg)
+    50% 0 repeat-y;
+  background-position: center 0;
+  background-size: cover;
+  .banner-right {
+    width: 838px;
+    background: url(https://webstrot.com/html/jbdesk/main_version/main_pages/images/top_shape.png)
+      50% 0 repeat-y;
+    background-position: center 0;
+    background-size: cover;
+    min-height: 739px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 120px;
+      background-image: url(https://webstrot.com/html/jbdesk/main_version/main_pages/images/emp_img.png);
+      background-repeat: repeat-x;
+      min-height: 466px;
+      background-position: 0 20%, 0 95%, 0 0, 0 100%, 0 0;
+      width: 92%;
+      animation: 90s para reverse infinite linear;
+    }
+  }
+  .banner-form {
+    input {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    .css-1yc4zyy-DropdownHandleComponent,
+    .css-1aarvou-DropdownHandleComponent {
+      margin: 0 0 0 -15px !important;
+    }
+  }
+}
+
+.hero-banner-two {
+  .location-map {
+    @media (max-width: 991.98px) {
+      height: 450px !important;
+    }
+  }
+  .filters-item {
+    @media (max-width: 991.98px) {
+      right: 0;
+      position: relative !important;
+    }
+  }
+  .job-category-item {
+    @media (max-width: 991.98px) {
+      position: relative !important;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+body {
+  overflow-x: hidden !important;
+}
+ul,
+li {
+  list-style: none;
+}
+#root {
+  overflow-x: hidden !important;
+}
+
+.bubble {
+  animation-name: bubbleMover;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  perspective: 100px;
+}
+.round-shape {
+  animation: moveleftbounce 3s linear infinite;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.css-wmw4vi-ReactDropdownSelect {
+  display: flex;
+  justify-content: space-between;
+  .react-dropdown-select-content {
+    display: contents !important;
+    margin-left: 10px;
+  }
+  .react-dropdown-select-item-selected {
+    background: $gray-300 !important;
+    color: $gray-800 !important;
+    border-bottom: 1px solid $white;
+  }
+  &:focus-within {
+    box-shadow: none !important;
+  }
+  &:hover {
+    border-color: $gray-300 !important;
+  }
+}

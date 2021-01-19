@@ -1,0 +1,23 @@
+.login-or-register {
+  width: 70px;
+  height: 70px;
+  background: $primary;
+  left: auto;
+  right: -35px;
+  top: 45%;
+  margin-top: -20px;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  h6 {
+    line-height: 70px;
+    transform: rotate(-45deg);
+  }
+}
+.login-form {
+  @media (max-width: 767.98px) {
+    padding: $spacer * 4 $spacer * 3 !important ;
+  }
+  @media (max-width: 575.98px) {
+    padding: $spacer * 3 $spacer * 3 !important ;
+  }
+}

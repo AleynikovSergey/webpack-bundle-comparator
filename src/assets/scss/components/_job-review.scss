@@ -1,0 +1,23 @@
+.job-review {
+  .job-review-slider {
+    .custom-button-group {
+      z-index: 1080;
+      bottom: 10px;
+      left: 15px;
+      @media (max-width: 767.98px) {
+        left: 0 !important;
+        right: 0 !important;
+      }
+    }
+  }
+  .job-review-card {
+    height: 85%;
+    .media-left {
+      img {
+        height: 109px;
+        width: 103px;
+      }
+      transform: translate3d(10px, -53px, 0);
+    }
+  }
+}

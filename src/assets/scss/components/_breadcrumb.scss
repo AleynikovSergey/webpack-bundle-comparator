@@ -1,0 +1,3 @@
+.breadcrumbs {
+  @include gradient-x(darken($primary, 22%), $primary);
+}

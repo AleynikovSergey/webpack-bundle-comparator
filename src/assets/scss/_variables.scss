@@ -1,0 +1,179 @@
+//
+// variables.scss
+// Override Bootstrap Variables
+//
+
+// Color system
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #e2e2e2;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$primary: #7863fe;
+$secondary: #222222;
+$success: #57ac60;
+$warning: #f1c444;
+$danger: #ff3366;
+
+$gray: #eee;
+$gray-1000: #222;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'warning': $warning,
+    'danger': $danger,
+  ),
+  $theme-colors
+);
+
+// Spacing system
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.25,
+    ),
+    5: (
+      $spacer * 1.5,
+    ),
+    6: (
+      $spacer * 3,
+    ),
+    7: (
+      $spacer * 3.5,
+    ),
+    8: (
+      $spacer * 4,
+    ),
+    9: (
+      $spacer * 4.375,
+    ),
+    10: (
+      $spacer * 4.75,
+    ),
+    11: (
+      $spacer * 5,
+    ),
+    12: (
+      $spacer * 5.5,
+    ),
+    13: (
+      $spacer * 6,
+    ),
+    14: (
+      $spacer * 6.25,
+    ),
+  ),
+  $spacers
+);
+
+// Body
+$body-color: #777777;
+
+// Typography system
+$font-size-base: 1rem;
+
+// Components system
+
+// list group system
+$list-group-border-width: 0;
+$list-group-border-color: transparent;
+$background-color: transparent;
+
+// Buttons + Forms system
+
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 2.5rem;
+
+$input-btn-padding-y-sm: 0.375rem;
+$input-btn-padding-x-sm: 1.5rem;
+
+$input-btn-padding-y-lg: 0.875rem;
+$input-btn-padding-x-lg: 2.75rem;
+$input-btn-font-size-lg: $font-size-base;
+
+$input-btn-focus-box-shadow: 0;
+$input-btn-active-box-shadow: 0;
+
+// Buttons
+
+$btn-focus-width: 0;
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+// Forms
+$input-padding-x: 1.5rem;
+$input-padding-x-sm: $input-padding-x;
+$input-padding-x-lg: $input-padding-x;
+
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;
+
+// Breadcrumbs
+
+$breadcrumb-bg: none;
+$breadcrumb-divider-color: $white;
+$breadcrumb-active-color: $white;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $gray-700;
+$link-decoration: none;
+// $link-hover-color:                        darken($link-color, 15%) ;
+$link-hover-decoration: none;
+
+// custom control input
+
+$custom-control-indicator-size: 0.9rem;
+
+$custom-control-indicator-checked-color: $white;
+$custom-control-indicator-checked-bg: $primary;
+
+$custom-control-indicator-border-color: $primary;
+$custom-checkbox-indicator-border-radius: 0;
+
+$custom-control-indicator-active-color: none;
+$custom-control-indicator-active-bg: none;
+
+$custom-control-indicator-focus-box-shadow: none;
+$custom-control-indicator-focus-border-color: none;
+
+// Navs
+
+$nav-tabs-link-active-color: $primary;
+
+// Typography
+$font-family-base: 'Lato';
+$headings-font-family: 'Poppins';
+$headings-font-weight: 400;
+$headings-line-height: 1.1;
+$headings-color: $secondary;
+
+$pagination-active-color: $white;
+$pagination-active-bg: theme-color('primary');
+$pagination-active-border-color: theme-color('primary');

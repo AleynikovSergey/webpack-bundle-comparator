@@ -1,0 +1,116 @@
+.card-bg-gradient {
+  background: linear-gradient(45deg, darken($primary, 20%) 20%, $primary 100%);
+  &::before {
+    border-bottom: 179px solid transparent;
+
+    border-left: 70px solid $white;
+  }
+  &::after {
+    border-bottom: 15px solid transparent;
+
+    border-left: 351px solid $white;
+  }
+}
+
+.pricing-plan {
+  .card {
+    &:hover {
+      .btn {
+        background: $primary;
+        border-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+.request-call-back {
+  @include gradient-x(darken($primary, 22%), $primary);
+}
+
+.our-blog-card {
+  a {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+.single-job {
+  &:hover {
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.job-category {
+  .hover-block {
+    &::before {
+      background-color: rgba(255, 255, 255, 0.09);
+    }
+  }
+  &:hover {
+    background: $primary;
+    border: 1px solid $primary;
+    .icon {
+      color: $gray-200 !important;
+    }
+    h5 {
+      color: $gray-200 !important;
+    }
+    .card-text {
+      color: $gray-200 !important;
+    }
+  }
+}
+
+.job-item {
+  a {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+.react-multi-carousel-dot--active {
+  button {
+    background: $primary !important;
+  }
+}
+
+.login-or-register {
+  background: $primary;
+}
+
+.latest-post {
+  @include gradient-x(darken($primary, 22%), $primary);
+}
+
+.best-jobs {
+  background-image: url(https://webstrot.com/html/jbdesk/main_version/main_pages/images/double_shape.png);
+  .best-jobs-tabs {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          &.active {
+            color: $white !important;
+            border: 1px solid $primary;
+            background: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service-card {
+  &:hover {
+    h5 {
+      a {
+        color: $primary !important;
+      }
+    }
+  }
+}

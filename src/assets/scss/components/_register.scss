@@ -1,0 +1,60 @@
+.register {
+  .card {
+    border-radius: 200px;
+    @media (max-width: 991.98px) {
+      border-radius: 70px;
+    }
+    @media (max-width: 767.98px) {
+      border-radius: 10px;
+    }
+    .employer-item {
+      @media (min-width: 992px) {
+        border-right: 1px solid $gray-300;
+      }
+    }
+    .employer-card-body {
+      @media (max-width: 991.98px) {
+        border-bottom: 1px solid $gray-300;
+      }
+    }
+    .btn {
+      bottom: -45px;
+      &--svg {
+        transition: all 0.5s;
+      }
+    }
+    .candidate-card-body,
+    .employer-card-body {
+      &:hover {
+        .btn {
+          background: $blue-violet-gradient !important;
+          color: $white;
+          border-color: $blue-violet;
+        }
+        svg {
+          color: $blue-violet;
+        }
+      }
+    }
+
+    .register-or {
+      width: 70px;
+      height: 70px;
+      background: $gray-100;
+      left: -34px;
+      top: 46%;
+      margin-top: -20px;
+      border-radius: 20px;
+      transform: rotate(45deg);
+      h5 {
+        transform: rotate(-45deg);
+        margin-top: 23px;
+      }
+    }
+  }
+  .round-shape {
+    top: 15%;
+    right: -140px;
+    z-index: -1;
+  }
+}

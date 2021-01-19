@@ -1,0 +1,14 @@
+.contact-us {
+  a {
+    transition: all 0.5s;
+    &:hover {
+      color: #ff3366 !important;
+    }
+  }
+  .contact-form {
+    padding: 110px 0;
+    background: url(https://webstrot.com/html/jbdesk/main_version/main_pages/images/cntct_bg.jpg);
+    background-position: center 0;
+    background-size: cover;
+  }
+}

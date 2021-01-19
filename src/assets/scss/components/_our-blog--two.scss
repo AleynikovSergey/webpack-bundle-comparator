@@ -1,0 +1,15 @@
+.our-blog {
+  position: relative;
+  .blog-content--wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  .blog-after--img {
+    position: absolute;
+    top: -76px;
+    right: -200px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}

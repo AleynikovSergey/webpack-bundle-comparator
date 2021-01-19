@@ -1,0 +1,59 @@
+.app-banner {
+  padding: 200px 0;
+  @media (max-width: 767.98px) {
+    padding: 70px 0;
+  }
+  @include bg-image-gradient(
+    theme-color('primary'),
+    'https://webstrot.com/html/jbdesk/main_version/main_pages/images/counter_bg.jpg'
+  );
+  .app-banner-image {
+    transform: translate(-30%, -50%) scale(1.7);
+    @media (min-width: 992px) and (max-width: 1780px) {
+      transform: translate(0%, -50%) scale(1.7);
+      text-align: center;
+      img {
+        width: 75% !important;
+      }
+    }
+  }
+}
+.statics-banner {
+  padding: 80px 0;
+  @media (max-width: 767.98px) {
+    padding: 40px 0;
+  }
+  @include bg-image-gradient(
+    theme-color('primary'),
+    'https://webstrot.com/html/jbdesk/main_version/main_pages/images/counter_bg.jpg'
+  );
+}
+
+.statics-banner-two {
+  padding: 50px 0;
+  background: linear-gradient(0deg, darken($primary, 15%) 9%, $primary 100%);
+  h2,
+  p {
+    color: $white !important;
+  }
+  .round-bg {
+    @media (min-width: 992px) and (max-width: 1472.98px) {
+      top: -182px !important;
+      left: 0px !important;
+    }
+  }
+}
+.statics-banner-three {
+  padding: 80px 0;
+  background: #f2efff;
+  .round-bg {
+    @media (min-width: 992px) and (max-width: 1472.98px) {
+      width: 100%;
+      top: -57px !important;
+      left: 0px !important;
+    }
+  }
+  h2 {
+    font-weight: 600;
+  }
+}

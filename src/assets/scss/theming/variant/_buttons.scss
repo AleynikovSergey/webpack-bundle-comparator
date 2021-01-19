@@ -1,0 +1,80 @@
+//
+// App Button
+//
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+.app-button {
+  i {
+    border-right: 1px solid $gray-300;
+  }
+  &:hover {
+    background: $black;
+    border: 1px solid $black;
+    color: $white;
+    i {
+      color: $white !important;
+    }
+  }
+}
+
+// Custom Hover Effect
+.outline-hover--effect {
+  &.white {
+    &::before {
+      border: 1px solid $white;
+    }
+    &:hover {
+      a {
+        color: $white !important;
+      }
+    }
+  }
+
+  &::before {
+    border: 1px solid $primary;
+  }
+  &:hover {
+    color: $primary !important;
+    border: 1px solid transparent;
+    background-color: transparent;
+    .icon {
+      color: $primary !important;
+    }
+  }
+}
+
+.default-hover--effect {
+  &::before {
+    border: 1px solid $primary;
+  }
+  &:hover {
+    color: $white !important;
+    border: 1px solid $primary;
+    background-color: $primary;
+  }
+}
+
+// Gradient Button
+.gradient-button {
+  background-image: linear-gradient(
+    to right,
+    #b446ff,
+    #6d68fe,
+    #4c46e6,
+    rgb(151, 0, 255)
+  );
+
+  a {
+    color: $white;
+  }
+}

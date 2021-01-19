@@ -1,0 +1,34 @@
+//
+// Custom variables
+//
+
+// Custom Buttons system
+$btn-icon-padding-y: 0.75rem;
+$btn-icon-padding-x: $btn-icon-padding-y;
+$btn-icon-size: 1.5rem;
+
+$btn-icon-padding-y-sm: 0.532rem;
+$btn-icon-padding-x-sm: $btn-icon-padding-y-sm;
+$btn-icon-size-sm: 1rem;
+
+$btn-icon-padding-y-lg: 0.75rem;
+$btn-icon-padding-x-lg: $btn-icon-padding-y-lg;
+$btn-icon-size-lg: 1.75rem;
+
+$btn-icon-line-height: 0.8;
+
+$btn-app-icon-size: 1.5rem;
+$btn-app-span-padding-y: 0rem;
+$btn-app-span-padding-x: 2rem;
+
+$default: #ff3366;
+$green: #57ac60;
+
+$blue-violet: #b446ff;
+$blue-violet-gradient: linear-gradient(
+  90deg,
+  rgb(180, 70, 255) 25%,
+  rgb(109, 104, 254) 100%
+);
+
+$black-shade: #222;

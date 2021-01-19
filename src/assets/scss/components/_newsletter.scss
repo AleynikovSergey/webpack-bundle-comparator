@@ -1,0 +1,18 @@
+@media (max-width: 991px) {
+  .newsletter {
+    border-bottom: none !important;
+  }
+}
+
+.news-letter-two {
+  padding: 150px 0;
+  margin-bottom: 300px;
+  background: linear-gradient(0deg, darken($primary, 20%) 9%, $primary 100%);
+  @media (max-width: 575.98px) {
+    padding: 50px 0;
+    margin-bottom: 0 !important;
+    .card {
+      position: relative !important ;
+    }
+  }
+}

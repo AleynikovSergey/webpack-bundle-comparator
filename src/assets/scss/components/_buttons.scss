@@ -1,0 +1,188 @@
+//
+// Icon Button
+//
+.btn {
+  &.btn-icon {
+    @include button-size(
+      $btn-icon-padding-y,
+      $btn-icon-padding-x,
+      $btn-font-size,
+      $btn-icon-line-height,
+      $btn-border-radius
+    );
+    svg {
+      width: $btn-icon-size;
+      height: $btn-icon-size;
+    }
+    //
+    // Icon Button Sizes
+    //
+
+    &.btn-lg {
+      @include button-size(
+        $btn-icon-padding-y-lg,
+        $btn-icon-padding-x-lg,
+        $btn-font-size-lg,
+        $btn-icon-line-height,
+        $btn-border-radius-lg
+      );
+      svg {
+        width: $btn-icon-size-lg;
+        height: $btn-icon-size-lg;
+      }
+    }
+
+    &.btn-sm {
+      @include button-size(
+        $btn-icon-padding-y-sm,
+        $btn-icon-padding-x-sm,
+        $btn-font-size-sm,
+        $btn-icon-line-height,
+        $btn-border-radius-sm
+      );
+      svg {
+        width: $btn-icon-size-sm;
+        height: $btn-icon-size-sm;
+      }
+    }
+  }
+}
+
+//
+// App Button
+//
+
+.app-button {
+  transition: all 0.6s;
+  i {
+    border-right: 1px solid $gray-300;
+    padding: $spacer $spacer * 1.25;
+    svg {
+      width: $btn-app-icon-size !important;
+      height: $btn-app-icon-size !important;
+    }
+  }
+  span {
+    padding: $btn-app-span-padding-y $btn-app-span-padding-x;
+  }
+  &:hover {
+    background: $black;
+    border: 1px solid $black;
+    color: $white;
+    i {
+      color: $white !important;
+    }
+  }
+}
+
+// Custom Hover Effect
+.outline-hover--effect {
+  cursor: pointer;
+  position: relative;
+  text-transform: capitalize;
+  transition: background-color 0.6s, color 0.6s;
+  transition: all 0.6s;
+  &.btn-warning {
+    background: $warning !important;
+    color: $white !important;
+    &::before {
+      border: 1px solid $warning !important;
+    }
+  }
+  &.white {
+    a {
+      transition: all 0.6s;
+    }
+    &::before {
+      border: 1px solid $white;
+    }
+    &:hover {
+      a {
+        color: $white !important;
+        transition: all 0.6s;
+      }
+    }
+  }
+  .icon {
+    transition: all 0.6s;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0;
+    transform: scale3d(0.6, 0.6, 1);
+    transition: transform 0.6s, opacity 0.6s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    border: 1px solid $primary;
+  }
+  &:hover {
+    color: $primary !important;
+    border: 1px solid transparent;
+    background-color: transparent;
+    .icon {
+      color: $primary !important;
+    }
+    &::before {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+.default-hover--effect {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  transition: background-color 0.6s, color 0.6s;
+  transition: all 0.6s;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0;
+    border: 1px solid $primary;
+    transform: scale3d(0.6, 0.6, 1);
+    transition: transform 0.6s, opacity 0.6s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+  &:hover {
+    color: $white !important;
+    border: 1px solid $primary;
+    background-color: $primary;
+    &::before {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+// Gradient Button
+.gradient-button {
+  background-image: linear-gradient(
+    to right,
+    #b446ff,
+    #6d68fe,
+    #4c46e6,
+    rgb(151, 0, 255)
+  );
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  a {
+    color: $white;
+  }
+  &:hover {
+    background-position: 100% 0 !important;
+    transition: all 0.4s ease-in-out;
+  }
+}

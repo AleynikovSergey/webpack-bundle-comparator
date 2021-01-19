@@ -1,0 +1,162 @@
+$primary: $blue-violet;
+
+@import './variant/variables';
+
+body[data-theme='violet'] {
+  @import './variant/variant';
+
+  .outline-hover--effect {
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+    .icon {
+      transition: all 0.4s ease-in-out;
+    }
+    &::before {
+      display: none;
+    }
+    &:hover {
+      color: $white !important;
+      border-color: transparent;
+      background-color: transparent;
+      .icon {
+        color: $white !important;
+      }
+    }
+  }
+
+  .default-hover--effect {
+    transition: all 0.4s ease-in-out;
+    &::before {
+      display: none;
+    }
+    &:hover {
+      color: $white !important;
+      border-color: transparent;
+    }
+  }
+
+  .btn-primary {
+    background-image: linear-gradient(
+      to right,
+      #b446ff,
+      #6d68fe,
+      #4c46e6,
+      rgb(151, 0, 255)
+    );
+    background-size: 300% 100%;
+    border-radius: 50px !important;
+    transition: all 0.4s ease-in-out;
+    border-color: transparent;
+    a {
+      color: $white;
+    }
+    &:hover {
+      background-position: 100% 0 !important;
+    }
+  }
+
+  .btn-outline-primary {
+    background-size: 300% 100%;
+    border-radius: 50px !important;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        #b446ff,
+        #6d68fe,
+        #4c46e6,
+        rgb(151, 0, 255)
+      );
+    }
+  }
+
+  .bg-primary {
+    background-image: linear-gradient(90deg, #b446ff 25%, #6d68fe 100%);
+    border-color: transparent;
+  }
+
+  .job-category {
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        #b446ff,
+        #6d68fe,
+        #4c46e6,
+        rgb(151, 0, 255)
+      );
+      background-size: 300% 100%;
+    }
+  }
+
+  .breadcrumbs {
+    background-image: linear-gradient(90deg, #b446ff 25%, #6d68fe 100%);
+  }
+
+  header {
+    background-image: linear-gradient(90deg, #b446ff 25%, #6d68fe 100%);
+    border-color: transparent !important;
+    box-shadow: 0 5px 10px rgba($color: $black, $alpha: 0.1);
+    .navigation {
+      background: transparent;
+      .nav-item {
+        .main-nav {
+          color: $white !important;
+          &:hover,
+          &.active {
+            color: $white !important;
+            &::before {
+              background: $white;
+            }
+            &::after {
+              background: $primary;
+            }
+          }
+        }
+      }
+      .search-button {
+        button {
+          background: transparent !important;
+          color: $white !important;
+        }
+      }
+    }
+    .user-profile {
+      h5,
+      .media-body {
+        color: $white !important;
+      }
+    }
+    .dropdown-menu {
+      li {
+        &:hover {
+          background-image: linear-gradient(90deg, #b446ff 25%, #6d68fe 100%);
+        }
+      }
+    }
+    .user-info {
+      .btn-secondary {
+        background: transparent !important;
+        color: $white !important;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .best-jobs {
+    .best-jobs-tabs {
+      .nav-tabs {
+        .nav-item {
+          .nav-link {
+            &.active {
+              background-image: linear-gradient(
+                90deg,
+                #b446ff 25%,
+                #6d68fe 100%
+              ) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

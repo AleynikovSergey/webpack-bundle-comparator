@@ -1,0 +1,63 @@
+header {
+  .navigation {
+    .nav-item {
+      .main-nav {
+        &:hover,
+        &.active {
+          color: $primary !important;
+          &::before {
+            background: $primary;
+            -webkit-mask-image: linear-gradient(
+              -75deg,
+              rgba(244, 55, 55, 0.24) 50%,
+              $primary 50%,
+              rgba(0, 0, 0, 1) 70%
+            );
+          }
+          &::after {
+            background: $white;
+          }
+        }
+      }
+    }
+    .dropdown {
+      .sub-dropdown {
+        .sub-dropdown-menu {
+          li {
+            a {
+              color: $secondary !important;
+              .sub-squre {
+                color: $primary !important;
+              }
+            }
+            &:hover {
+              a,
+              .sub-squre {
+                color: $white !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    border: none;
+    border-top: 3px solid $primary;
+    li {
+      a {
+        color: $secondary !important;
+        .squre {
+          color: $primary;
+        }
+      }
+      &:hover {
+        background: $primary;
+        a,
+        svg {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}

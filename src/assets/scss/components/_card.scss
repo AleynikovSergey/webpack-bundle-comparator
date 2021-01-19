@@ -1,0 +1,367 @@
+.card-bg-gradient {
+  background: linear-gradient(45deg, darken($primary, 28%) 20%, $primary 100%);
+  &::before {
+    content: '';
+    border-bottom: 179px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    border-left: 70px solid $white;
+  }
+  &::after {
+    content: '';
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    border-left: 351px solid $white;
+  }
+  @media (max-width: 575.98px) {
+    /* For tablets: */
+    &::before {
+      content: '';
+      border-bottom: none;
+      position: none;
+      left: none;
+      top: none;
+      border-left: none;
+    }
+    &::after {
+      content: '';
+      border-bottom: none;
+      position: none;
+      left: none;
+      top: none;
+      border-left: none;
+    }
+  }
+}
+
+// Contact info card
+.contact-info {
+  span {
+    border: 2px solid $white;
+    height: $spacer * 4.375;
+    width: $spacer * 4.375;
+  }
+}
+
+// pricing plan card
+.pricing-plan {
+  .card {
+    .btn {
+      transition: all 0.6s;
+    }
+    &:hover {
+      .btn {
+        background: $primary;
+        border-color: $primary;
+        color: $white;
+        transition: all 0.6s;
+      }
+    }
+  }
+}
+.pricing-plan-two {
+  .card {
+    .btn,
+    span {
+      transition: all 0.6s;
+    }
+    &:hover {
+      .btn {
+        background: $primary;
+        border-color: $primary;
+        color: $white;
+        transition: all 0.6s;
+      }
+      span {
+        color: $primary !important;
+      }
+    }
+    .pricing-two {
+      background: #f9f9f9;
+    }
+  }
+}
+
+.pricing-plan-three {
+  background: linear-gradient(
+    0deg,
+    rgb(247, 236, 255) 9%,
+    rgb(240, 240, 255) 100%
+  );
+  .section-heading {
+    @media (min-width: 992px) {
+      padding-bottom: 0 !important;
+      transform: translateY(80%);
+    }
+  }
+  .pricing-plan-item {
+    @media (min-width: 992px) {
+      transform: translateY(20%);
+    }
+  }
+  .card {
+    .btn,
+    .card-title {
+      transition: all 0.6s;
+    }
+    &:hover {
+      .card-title {
+        background: $blue-violet-gradient;
+        color: $white;
+      }
+      .btn {
+        background: $blue-violet-gradient;
+        border-color: $blue-violet;
+        color: $white;
+        transition: all 0.6s;
+      }
+    }
+  }
+  .line-shape1 {
+    top: 30%;
+    left: -150px;
+  }
+  .line-shape2 {
+    top: 20%;
+    right: -150px;
+  }
+}
+
+//Our  Blog
+.request-call-back {
+  @include gradient-x(lighten($primary, 10%), $primary);
+}
+.our-blog-card {
+  a {
+    transition: all 0.5s;
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+// Job item
+.job-item {
+  @media (max-width: 380px) {
+    padding: 0 !important;
+    .col-xs-12 {
+      padding: 0 0 8px 16px !important;
+    }
+    li {
+      padding: 2px !important;
+    }
+  }
+  a {
+    transition: all 0.5s;
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+// hiring company
+.companies-job {
+  .companies-country {
+    transform: rotate(-33deg);
+    width: 167px;
+    height: 35px;
+    left: -40px;
+    top: -100px;
+    transition: all 0.5s;
+  }
+  &:hover {
+    .companies-country {
+      top: 10px;
+      transition: all 0.5s;
+    }
+  }
+}
+
+// Service Card
+.service-card {
+  h5 {
+    a {
+      transition: all 0.6s;
+    }
+  }
+  &:hover {
+    h5 {
+      a {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+// Jobs Card
+.jobs-card--wrapper {
+  .jobs-card {
+    transition: all 0.6s;
+    &--icon {
+      transition: all 0.6s;
+      padding: 30px;
+      .icon {
+        font-size: 30px;
+      }
+    }
+    &--content {
+      h5 {
+        font-size: 18px;
+        transition: all 0.6s;
+      }
+    }
+  }
+  &:hover {
+    .jobs-card {
+      &--icon {
+        transition: all 0.6s;
+        background: $success !important;
+      }
+      &--content {
+        h5 {
+          color: $success !important;
+          transition: all 0.6s;
+        }
+      }
+    }
+  }
+}
+
+// Testimonial Card
+.testimonial-card {
+  padding: 30px;
+  &.translateY {
+    transform: translateY(-100px);
+    @media (max-width: 991px) {
+      transform: translateY(0px);
+    }
+  }
+  &--owner {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+//Application
+.thumbnail-btn-icon {
+  .btn {
+    &:hover {
+      svg {
+        color: $white !important;
+      }
+    }
+  }
+}
+
+// Control Card
+.control-card {
+  padding: 30px;
+  &:hover {
+    h5 {
+      a {
+        color: $blue-violet;
+        transition: all 0.6s;
+      }
+    }
+  }
+  &--content {
+    h5 {
+      padding-bottom: 10px;
+      a {
+        color: #222222;
+        transition: all 0.6s;
+      }
+    }
+  }
+}
+
+// Resume Card
+.resume-card--wrapper {
+  @media (max-width: 480px) {
+    border-radius: 10px !important;
+    .resume-card {
+      display: block !important;
+      text-align: center !important;
+      &--content {
+        display: block !important;
+        .applicant {
+          padding-bottom: 10px;
+          text-align: center !important;
+        }
+        .bio {
+          padding-bottom: 16px;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+  .btn {
+    transition: all 0.6s;
+    a {
+      transition: all 0.6s;
+    }
+  }
+  &:hover {
+    .btn {
+      transition: all 0.6s;
+      background: $blue-violet-gradient;
+      a {
+        color: $white;
+        transition: all 0.6s;
+      }
+    }
+  }
+  .resume-card {
+    &--content {
+      .applicant {
+        @media (min-width: 481px) {
+          width: 75px;
+        }
+        img {
+          width: 70px;
+        }
+      }
+      .bio {
+        h5 {
+          margin: 0;
+          a {
+            font-size: 18px;
+            color: $black-shade;
+            font-weight: 500;
+          }
+        }
+        p {
+          margin: 0;
+          .icon {
+            color: $blue-violet;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Blog Card Two
+.blog-card {
+  @media (max-width: 575px) {
+    .media {
+      justify-content: center;
+      .media-left {
+        padding-top: 20px;
+        width: 75px;
+        position: absolute;
+        img {
+          width: 100%;
+        }
+      }
+      .media-body {
+        padding-top: 120px !important;
+        text-align: center;
+      }
+    }
+  }
+}

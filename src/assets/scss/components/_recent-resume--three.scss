@@ -1,0 +1,19 @@
+.recent-resume--three {
+  background: linear-gradient(
+    0deg,
+    rgb(247, 236, 255) 9%,
+    rgb(240, 240, 255) 100%
+  );
+  .shape1 {
+    top: 35%;
+    left: -90px;
+  }
+  .line3 {
+    position: absolute;
+    right: -135px;
+    top: 103px;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+}

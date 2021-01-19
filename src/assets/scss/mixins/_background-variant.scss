@@ -1,0 +1,16 @@
+//
+// background-variant.scss
+//
+
+// background image and gradient combin
+@mixin bg-image-gradient($color, $url, $lighten-color: lighten($color, 4%)) {
+  background-image: linear-gradient(
+      0deg,
+      rgba($lighten-color, 0.98) 39%,
+      rgba($lighten-color, 0.86) 100%
+    ),
+    url($url);
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}

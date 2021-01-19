@@ -1,0 +1,7 @@
+$primary: $green;
+
+@import './variant/variables';
+
+body[data-theme='green'] {
+  @import './variant/variant';
+}

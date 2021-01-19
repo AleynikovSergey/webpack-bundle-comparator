@@ -1,0 +1,25 @@
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+  ),
+  $theme-colors
+);
+
+$nav-tabs-link-active-color: $primary;
+
+$custom-control-indicator-checked-color: $white;
+$custom-control-indicator-checked-bg: $primary;
+
+$custom-control-indicator-border-color: $primary;
+
+$pagination-active-color: $white;
+$pagination-active-bg: theme-color('primary');
+$pagination-active-border-color: theme-color('primary');

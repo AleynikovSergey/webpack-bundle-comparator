@@ -1,0 +1,21 @@
+.content-icon {
+  ul {
+    display: flex;
+    padding-top: 50px !important;
+    li {
+      margin-right: 45px;
+      a {
+        &:hover {
+          .icon {
+            color: $blue-violet;
+          }
+        }
+        .icon {
+          color: #c6c6c6;
+          font-size: 28px;
+          transition: all 0.6s;
+        }
+      }
+    }
+  }
+}

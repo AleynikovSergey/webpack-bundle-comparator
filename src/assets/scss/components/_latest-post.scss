@@ -1,0 +1,10 @@
+.latest-post {
+  @include gradient-x(darken($primary, 22%), $primary);
+  img {
+    bottom: 46px;
+    right: 40px;
+  }
+  h5 {
+    line-height: 30px;
+  }
+}

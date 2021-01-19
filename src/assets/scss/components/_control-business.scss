@@ -1,0 +1,21 @@
+.control-business {
+  .round-shape--left {
+    top: 35%;
+    left: -90px;
+  }
+  .round-shape--right {
+    right: -125px;
+    bottom: -27px;
+    z-index: 1;
+  }
+  .line3 {
+    img {
+      position: absolute;
+      right: -135px;
+      top: 103px;
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
+  }
+}

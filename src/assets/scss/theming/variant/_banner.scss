@@ -1,0 +1,44 @@
+.statics-banner {
+  @include bg-image-gradient(
+    theme-color('primary'),
+    'https://webstrot.com/html/jbdesk/main_version/main_pages/images/counter_bg.jpg'
+  );
+}
+
+.app-banner {
+  @include bg-image-gradient(
+    theme-color('primary'),
+    'https://webstrot.com/html/jbdesk/main_version/main_pages/images/counter_bg.jpg'
+  );
+}
+
+.statics-banner-two {
+  padding: 50px 0;
+  background: linear-gradient(0deg, darken($primary, 20%) 9%, $primary 100%);
+  h2,
+  p {
+    color: $white !important;
+  }
+}
+
+.pricing-plan-two {
+  .card {
+    &:hover {
+      .btn {
+        background: $primary;
+        border-color: $primary;
+        color: $white;
+      }
+      span {
+        color: $primary !important;
+      }
+    }
+    .pricing-two {
+      background: #f9f9f9;
+    }
+  }
+}
+
+.news-letter-two {
+  background: linear-gradient(0deg, darken($primary, 20%) 9%, $primary 100%);
+}
